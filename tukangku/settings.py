@@ -26,7 +26,8 @@ SECRET_KEY = 'hqr_p!v#ifye(&yf@gtm*pea4)kl+_3a)w)ud%^55)_1*2#n3e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['arsipro.herokuapp.com']
+
 
 
 # Application definition
