@@ -1,8 +1,12 @@
-# arsipro
+# ArsiJob
 Yanuar Nur Kholik 18.12.0974
 
 # Installation
-Menggunakan Framwork Python [Django](https://docs.djangoproject.com/en/3.1/topics/install/)
+Menggunakan [Python](https://www.python.org/downloads/)==3.9.1
+Menggunakan Framwork Python [Django](https://docs.djangoproject.com/en/3.1/topics/install/)==3.1.5 atau bisa 
+```python
+pip install django==3.1.5
+```
 
 #### 1. Download [virtualenv](https://yasoob.me/2013/07/30/what-is-virtualenv/) untuk membuat Virtual Environment Django dengan command dibawah
 ```python
@@ -29,7 +33,7 @@ Kemudian hapus paket yang error tersebut pada ```requirements.txt``` untuk menin
 
 #### 5. Menjalankan program
 ```python
-python manage.py make migrations
+python manage.py makemigrations
 python manage.py migrate # Akan memunculkan banyak "OK", berarti program tidak ada masalah
 python manage.py runserver
 ```
@@ -50,3 +54,9 @@ Username / pass
 1. admin / 123
 2. terminal >> python manage.py createsuperuser 
 
+# Note
+1. Super admin bisa mengganti permission
+2. Main navigator ada di ```127.0.0.1:8000/admin/```
+3. Seharusnya program bisa jalan karena sudah di reinstall beberapa kali
+4. Nama master file bisa saja berdeba dnegan nama Project ArsiJob
+5. Repo ini diperbarui karena project yang lama mengalami major error tanggal 16 Jan 2021
