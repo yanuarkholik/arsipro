@@ -1,6 +1,8 @@
 # ArsiJob
 Yanuar Nur Kholik 18.12.0974
 
+Baca Big Note dibawah 
+
 # Installation
 Menggunakan [Python](https://www.python.org/downloads/)==3.9.1
 Menggunakan Framwork Python [Django](https://docs.djangoproject.com/en/3.1/topics/install/)==3.1.5 atau bisa 
@@ -53,10 +55,12 @@ puthon manage.py runserver
 Username / pass
 1. admin / 123
 2. terminal >> python manage.py createsuperuser 
+3. Sign Up
 
 # Note
 1. Super admin bisa mengganti permission
 2. Main navigator ada di ```127.0.0.1:8000/admin/```
-3. Seharusnya program bisa jalan karena sudah di reinstall beberapa kali
+3. Seharusnya program bisa jalan karena sudah di reinstall beberapa kali pada direktori dan device berbeda
 4. Nama master file bisa saja berdeba dnegan nama Project ArsiJob
 5. Repo ini diperbarui karena project yang lama mengalami major error tanggal 16 Jan 2021
+6. Abaikan Contributor coomit pada project tedahulu
