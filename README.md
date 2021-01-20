@@ -1,16 +1,6 @@
 # arsipro
 Yanuar Nur Kholik 18.12.0974
 
-# Tugas
-#### 1. Tugas membuat [rancangan db](https://github.com/yanuarkholik/arsipro/tree/main/screen_capture/db) dan [screen capture table](https://github.com/yanuarkholik/arsipro/tree/main/screen_capture/rancangan%20db)
-Berisi screen capture table db dan rancangan db
-#### 2. Tugas membuat halaman [login](https://github.com/yanuarkholik/arsipro/blob/main/templates/login/login.html) dan [screen capture halaman login](https://github.com/yanuarkholik/arsipro/blob/main/screen_capture/Login/Login.png)
-Berisi screen capture halaman login dan source code halaman login
-#### 3. Tugas membuat halaman [admin](https://github.com/yanuarkholik/arsipro/tree/main/templates/admin) dan [screen capture halaman admin](https://github.com/yanuarkholik/arsipro/tree/main/screen_capture/interface)
-Berisi source code halaman admin dkk.
-#### 4. Tugas membuat halaman [user](https://github.com/yanuarkholik/arsipro/blob/main/templates/base.html) dan screen [capture halaman user](https://github.com/yanuarkholik/arsipro/tree/main/screen_capture/interface)
-Berisi source code halaman user dan screen capture halaman user dan admin.
-
 # Installation
 Menggunakan Framwork Python [Django](https://docs.djangoproject.com/en/3.1/topics/install/)
 
@@ -47,9 +37,6 @@ Web aplikasi dapat di buka pada browser apa saja di
 ```python 
 # user page
 127.0.0.1:8000
-
-# admin page
-127.0.0.1:8000/admin/
 ```
 
 #### 6. Super admin page
@@ -57,10 +44,9 @@ Web aplikasi dapat di buka pada browser apa saja di
 puthon manage.py runserver
 
 # ketikkan pada browser
-127.0.0.1:8000/super-admin/
+127.0.0.1:8000/admin/
 ```
 Username / pass
-1. yanuar / 12345
-2. yayan / 123
-
+1. admin / 123
+2. terminal >> python manage.py createsuperuser 
 
