@@ -141,6 +141,7 @@
 										<a class="nav-link" id="profile-tab" data-toggle="tab" href="#antrian" role="tab" aria-controls="profile" aria-selected="false"><small class="text-secondary">DALAM ANTRIAN</small></a>
 									</li>
 									<li class="nav-item">
+										
 										<a class="nav-link" id="contact-tab" data-toggle="tab" href="#pengerjaan" role="tab" aria-controls="contact" aria-selected="false"><small class="text-secondary">DALAM PENGERJAAN</small></a>
 									</li>
 									<li class="nav-item">
@@ -173,21 +174,13 @@
 													</div>
 													{% endif %}
 													<div class="media">
-														{% if post.status == 'Dalam Pengerjaan' %}
-														<img class="align-self-center mr-3" src="{% static 'image/work.png' %}" alt="{{ user.username }}">
-														{% elif post.status == 'Selesai' %}
-														<img class="align-self-center mr-3" src="{% static 'image/selesai.png' %}" alt="{{ user.username }}">
-														{% elif post.status == 'Menunggu Pembayaran' %}
-														<img class="align-self-center mr-3" src="{% static 'image/wait.png' %}" alt="{{ user.username }}">
-														{% else %}
-														<img class="align-self-center mr-3" src="{% static 'image/queue.png' %}" alt="{{ user.username }}">
-														{% endif %}
+														
 														<div class="media-body">
 															<small class="font-weight-normal">
 																<span class="text-right">No.ID {{ post.id }}</span>
 															</small><br>
 															<small class="m-0 font-weight-bold text-dark text-capitalize">
-																{{ post.nama_depan }} {{ post.nama_belakang }} 
+																{{ post.oleh }}
 																<a href="{% url 'detail-permintaan' post.id %}" class="badge badge-primary">
 																	Selengkapnya
 																</a>

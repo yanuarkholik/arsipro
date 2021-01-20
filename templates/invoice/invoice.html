@@ -19,9 +19,7 @@
                 <p class="lead">{{ i.id }}</p>
                 <p>Lunas: {{ i.tanggal_selesai }}</p>
                 <h4>Informasi Customer</h4>
-                <p>{{ i.nama_depan }} {{ i.nama_belakang }}</p>
-                <p>{{ i.alamat }}</p>
-                <p></p>{{ i.kota }}, {{ i.provinsi }}</p>
+                <p>{{ i.oleh }} ID {{ i.oleh.id }} </p>
                 <p>Indonesia</p>
             </div>
         </div>
@@ -30,19 +28,13 @@
             <thead>
                 <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">Jenis Layanan</th>
                     <th scope="col">Kategori</th>
                 </tr>
             </thead>
             <thead>
                 <tr>
                     <td scope="col">{{ i.id }}</th>
-                    <td>{{ i.services }}</td>
-                    <td>{{ i.jenis_ruangan }}
-                    {% if i.jenis_ruangan == 'Lainnya' %}
-                    , {{ i.lainnya }}
-                    {% endif %}
-                    </td>   
+                    <td>{{ i.jenis_ruangan }}</td>   
                 </tr>
                 <tr>
                     <td scope="row">Jumlah Pembayaran</th>

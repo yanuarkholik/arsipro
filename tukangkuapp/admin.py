@@ -21,7 +21,7 @@ class RequestAdmin(admin.ModelAdmin):
     inlines = [
         ImagesAdminInline,
     ]
-    list_display = ('oleh', 'nama_depan', 'nama_belakang', 'email', 'kontak', 'provinsi', 'kota', 'status', 'buat', 'id')
+    list_display = ('oleh', 'email', 'kontak', 'status', 'buat', 'id')
     ordering = ('-buat',)
     list_filter = (
         ('services'),

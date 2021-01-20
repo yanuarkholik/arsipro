@@ -11,46 +11,6 @@
 <link rel="stylesheet" href="{% static 'css/grid.css' %}">
 {% endblock %}
 
-{% block url %}
-<div class="d-flex justify-content-between m-auto">
-	<div class="nav-item">
-		<small>
-			<a class="nav-link font-weight-bold text-uppercase text-secondary" href="{% url 'home' %}">
-				semua design
-			</a>
-		</small>
-	</div>
-	<div class="nav-item">
-		<div class="dropdown">
-			<small>
-				<a class="dropdown-toggle nav-link font-weight-normal text-uppercase text-secondary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Daftar Ruangan
-				</a>
-			</small>
-			<div class="dropdown-menu m-2 bg-light border border-light" aria-labelledby="dropdownMenuLink">
-				{% for d in gigs %}
-				<a class="dropdown-item" href="#">{{ d.jenis_ruangan }}</a>
-				{% endfor %}
-			</div>
-		  </div>
-		</div>
-	</div>
-	<div class="nav-item">
-		<div class="dropdown">
-			<small>
-				<a class="dropdown-toggle nav-link text-uppercase font-weight-normal text-secondary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Daftar Professional
-				</a>
-			</small>
-			<div class="dropdown-menu m-2 bg-light border border-light" aria-labelledby="dropdownMenuLink">
-				{% for d in gigs %}
-				<a class="dropdown-item" href="#">{{ d.kategori }}</a>
-				{% endfor %}
-			</div>
-		</div>
-	</div>
-</div>
-{% endblock %}
 
 {% block content %}
 
@@ -156,14 +116,6 @@
 																</small>
 																<small class="text-uppercase font-weight-bold">
 																	{{ gig.oleh.status }}
-																</small>
-															</div>
-															<div class="mb-3 d-flex justify-content-between">
-																<small class="text-uppercase font-weight-bold">
-																	Alamat
-																</small>
-																<small class="text-uppercase font-weight-normal text-right">
-																	{{ gig.oleh.kota }}, {{ gig.oleh.provinsi }} <br>
 																</small>
 															</div>
 															<div class="mb-3 d-flex justify-content-between">

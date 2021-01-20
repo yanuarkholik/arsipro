@@ -177,7 +177,7 @@ class CreateRequest(CreateView):
     """ Membuat pesanan pasa Request """
     model = Request
     template_name = 'child/pesan.html'
-    fields = ['nama_depan', 'nama_belakang', 'email', 'kontak', 'deskripsi', 'link', 'jenis_ruangan', 'services', 'jumlah_budget', 'provinsi', 'kota', 'alamat', 'lainnya']
+    fields = ['email', 'kontak', 'deskripsi', 'link', 'jenis_ruangan','jumlah_budget', 'lainnya']
     
     def form_valid(self, form):
         form.instance.oleh = self.request.user

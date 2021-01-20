@@ -1,0 +1,70 @@
+{% extends '../index.html' %}
+{% load static %}
+{% load humanize %} 
+
+
+{% block pemesanan %}
+<li class="nav-item m-auto"><a class="nav-link font-weight-normal text-secondary" href="{% url 'request-create' %}">BUAT PEMESANAN</a></li>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/grid.css' %}">
+{% endblock %}
+
+
+{% block content %}
+
+<!-- Content Area -->
+<section>
+	<div class="container" style="max-width: 95%;">
+		<div class="row">
+			<div class="col-lg-12 p-2">
+				<div class="col-lg-12 rounded shadow-sm bg-white p-3">
+					<h4 class="roboto font-weight-light">
+						Desain Rumah Minimalis, Apartemen Modern, Kamar Tidur Industrial, Dapur, Ruang Keluarga, Tangga, Ruang Makan <br>
+					</h4>
+					<p class="roboto">
+						Foto inspirasi dan ide desain rumah minimalis, apartemen modern, kamar tidur industrial, dapur, ruang keluarga, tangga, ruang makan, dan lain - lain.
+					</p>
+					<div class="row p-3">
+						<div class="row row-cols-1 row-cols-md-6 g-4">
+							{% for g in sellers %}
+							{% if g %}
+							<div class="col">
+								<a class="text-decoration-none" href="">
+									<div class="card shadow-sm h-100">
+										<img src="{{ g.image.url }}" class="card-img-top" alt="{{ g.oleh }}">
+										<div class="card-body p-3">
+										<p class="card-text">
+											<img src="{{ user.profile.image.url }}" class="border" style="border-radius: 50%; width: 25px; height: 25px; object-fit: cover;"><small class="text-dark"> {{ g.oleh }}</small>
+											<br>
+											<span class="text-dark">{{ g.judul }} </span>
+										</p>
+										</div>
+										<div class="card-footer d-flex justify-content-end">
+											<small class="text-muted">IDR {{ g.jumlah_budget }}</small>
+										</div>
+									</div>
+								</a>
+							</div>
+							{% else %}
+							<div class="col-lg-12">
+								kosong
+							</div>
+							{% endif %}
+							{% endfor %}
+						</div>
+					</div>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Content Area -->
+
+{% endblock %}
+
+
+</body>
+</html>
