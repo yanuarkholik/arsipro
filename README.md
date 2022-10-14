@@ -61,6 +61,3 @@ Username / pass
 1. Super admin bisa mengganti permission
 2. Main navigator ada di ```127.0.0.1:8000/admin/```
 3. Seharusnya program bisa jalan karena sudah di reinstall beberapa kali pada direktori dan device berbeda
-4. Nama master file bisa saja berdeba dnegan nama Project ArsiJob
-5. Repo ini diperbarui karena project yang lama mengalami major error tanggal 16 Jan 2021
-6. Abaikan Contributor coomit pada project tedahulu
