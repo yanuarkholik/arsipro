@@ -10,14 +10,14 @@ Menggunakan Framwork Python [Django](https://docs.djangoproject.com/en/3.1/topic
 pip install django==3.1.5
 ```
 
-#### 1. Download [virtualenv](https://yasoob.me/2013/07/30/what-is-virtualenv/) untuk membuat Virtual Environment Django dengan command dibawah
+#### 1. Download [virtualenv](https://pypi.org/project/virtualenv/) untuk membuat Virtual Environment Django dengan command dibawah
 ```python
 pip install virtualenv
 ```
 *Note : aplikasi bisa berjalan tanpa virtualenv, virtualenv digunakan untuk mengoptimalkan development Python*
 #### 2. Membuat virtualenv
 ```python
-virtualenv nama_virtualenv
+python venv nama_virtualenv
 ```
 #### 3. Aktivasi virtualenv
 ```python
